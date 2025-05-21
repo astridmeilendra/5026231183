@@ -15,7 +15,7 @@
     <a href="https://kompas.tv" target="_blank">Kompas Tv</a> |
     <a href="http://google.co.id" target="_parent">Google</a> |
     <a href="#">Halaman ini</a>
-        <h2 style="color:rgb(192, 23, 230)">Bantu Adaptasi Mahasiswa Baru, ITS Gelar Mentoring Agama Islam</h2>
+        <h2 style="color:rgb(207, 63, 239)">Bantu Adaptasi Mahasiswa Baru, ITS Gelar Mentoring Agama Islam</h2>
         <h5><i> Oleh : itsash | 18 | Source / ITS Online </i></h5>
 
         <p>
