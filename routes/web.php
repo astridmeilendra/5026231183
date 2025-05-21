@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
 
 /*
 |--------------------------------------------------------------------------
@@ -45,3 +46,22 @@ Route::get('frontend', function () {
 });
 
 
+=======
+//import java.io;
+
+//
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('halo', function () {
+    return "<h2>Halo, Selamat datang di Laravel! www.malasngoding.com</h2>";
+});
+
+Route::get('blog', function () {
+    return view('blog');
+});
+
+Route::get('hello', [Link::class, 'blog'])->name('helloworld'); {
+};
+>>>>>>> bc3768d0e5cff03fb43878cfc3c1306c7acaeee9
