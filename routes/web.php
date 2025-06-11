@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BelanjaController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Link;
 use App\Http\Controllers\PegawaiController;
@@ -76,7 +77,6 @@ Route::get('/pegawai/cari', [PegawaiController::class, 'cari']);
 
 
 //Genteng CRUD
-//crud pegawai
 Route::get('/genteng', [GentengController::class, 'index']);
 Route::get('/genteng/tambah', [GentengController::class, 'tambah']);
 Route::post('/genteng/store', [GentengController::class, 'store']);
@@ -84,3 +84,10 @@ Route::get('/genteng/edit/{id}', [GentengController::class, 'edit']);
 Route::post('/genteng/update', [GentengController::class, 'update']);
 Route::get('/genteng/hapus/{id}', [GentengController::class, 'hapus']);
 Route::get('/genteng/cari', [GentengController::class, 'cari']);
+
+
+//Keranjang Belanja CRUD
+Route::get('/keranjangbelanja', [BelanjaController::class, 'index']);
+Route::get('/keranjangbelanja/tambah', [BelanjaController::class, 'tambah']);
+Route::post('/keranjangbelanja/store', [BelanjaController::class, 'store']);
+Route::get('/keranjangbelanja/hapus/{id}', [BelanjaController::class, 'hapus']);
