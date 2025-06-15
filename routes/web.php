@@ -6,6 +6,8 @@ use App\Http\Controllers\Link;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\GentengController;
+use App\Http\Controllers\KaryawanController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -91,3 +93,10 @@ Route::get('/keranjangbelanja', [BelanjaController::class, 'index']);
 Route::get('/keranjangbelanja/tambah', [BelanjaController::class, 'tambah']);
 Route::post('/keranjangbelanja/store', [BelanjaController::class, 'store']);
 Route::get('/keranjangbelanja/hapus/{id}', [BelanjaController::class, 'hapus']);
+
+
+//Karyawan CRUD
+Route::get('/karyawan', [KaryawanController::class, 'index']);
+Route::get('/karyawan/tambah', [KaryawanController::class, 'tambah']);
+Route::post('/karyawan/store', [KaryawanController::class, 'store']);
+Route::get('/karyawan/hapus/{id}', [KaryawanController::class, 'hapus']);
