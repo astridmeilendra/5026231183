@@ -7,6 +7,7 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\GentengController;
 use App\Http\Controllers\KaryawanController;
+use App\Http\Controllers\mykaryawanController;
 
 
 Route::get('/', function () {
@@ -63,6 +64,7 @@ Route::post('/formulir/proses', [PegawaiController::class, 'proses']);
 
 
 
+
 // route blog
 Route::get('/blog', [BlogController::class, 'home']);
 Route::get('/blog/tentang', [BlogController::class, 'tentang']);
@@ -100,3 +102,12 @@ Route::get('/karyawan', [KaryawanController::class, 'index']);
 Route::get('/karyawan/tambah', [KaryawanController::class, 'tambah']);
 Route::post('/karyawan/store', [KaryawanController::class, 'store']);
 Route::get('/karyawan/hapus/{id}', [KaryawanController::class, 'hapus']);
+
+
+//MYKARYAWAN CRUD
+Route::get('/eas', [mykaryawanController::class, 'index']);
+Route::get('/mykaryawan/edit/{id}', [mykaryawanController::class, 'edit']);
+Route::put('/mykaryawan/update', [mykaryawanController::class, 'update']);
+Route::get('/mykaryawan/hapus/{id}', [mykaryawanController::class, 'hapus']);
+Route::get('/mykaryawan/view/{id}', [mykaryawanController::class, 'view']);
+
