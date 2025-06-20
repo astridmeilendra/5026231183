@@ -31,18 +31,17 @@ class mykaryawanController extends Controller
     // Memperbarui data karyawan
     public function update(Request $request)
     {
-        // Melakukan update data karyawan di database
-        DB::table('mykaryawan')->where('kodepegawai', $request->kodepegawai)->update([
-            'kodepegawai '     => $request->kodepegawai ,
-            'namalengkap'     => $request->namalengkap,
-            'divisi'          => $request->divisi,
-            'departemen'      => $request->departemen
-        ]);
+        // Update data karyawan berdasarkan kodepegawai
+        DB::table('mykaryawan') ->where('kodepegawai', $request->kodepegawai)->update([
+                'kodepegawai' => $request->kodepegawai,
+                'namalengkap' => $request->namalengkap,
+                'divisi' => $request->divisi,
+                'departemen' => $request->departemen
+            ]);
 
-        // Setelah data diupdate, redirect kembali ke halaman daftar karyawan
+        // Redirect setelah update
         return redirect('/eas');
     }
-
     // Menghapus data karyawan
    public function view($id)
 {

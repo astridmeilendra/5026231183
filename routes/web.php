@@ -107,7 +107,7 @@ Route::get('/karyawan/hapus/{id}', [KaryawanController::class, 'hapus']);
 //MYKARYAWAN CRUD
 Route::get('/eas', [mykaryawanController::class, 'index']);
 Route::get('/mykaryawan/edit/{id}', [mykaryawanController::class, 'edit']);
-Route::put('/mykaryawan/update', [mykaryawanController::class, 'update']);
+Route::post('/mykaryawan/update', [mykaryawanController::class, 'update']);
 Route::get('/mykaryawan/hapus/{id}', [mykaryawanController::class, 'hapus']);
 Route::get('/mykaryawan/view/{id}', [mykaryawanController::class, 'view']);
 

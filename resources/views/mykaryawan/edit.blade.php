@@ -6,7 +6,7 @@
 
     <br/><br/>
 
-    <form action="/eas/update" method="post">
+    <form action="/mykaryawan/update" method="post">
         @csrf
         <input type="hidden" name="id" value="{{ $mykaryawan->kodepegawai }}"> <br/>
 
